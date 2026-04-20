@@ -11,6 +11,10 @@ int main(void)
     for(i=1; i<=n; i++) {
         scanf("%c", &ch);
         
+        if (ch == '\n') {
+            i -= 1;
+        }
+        
         if(ch >= 'a' && ch <= 'z') {
             count_alpha++;
             count_num = 0;
